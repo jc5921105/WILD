@@ -1,0 +1,35 @@
+Test Set: one_delete_test.json
+	Straight L.D. Search Accuracy: 74.6481%
+	W.I.L.D. Search Accuracy: 77.7604%
+	W.I.L.D. Vague Search Accuracy: 95.0109%
+
+Test Set: one_insert_test.json
+	Straight L.D. Search Accuracy: 92.5730%
+	W.I.L.D. Search Accuracy: 96.5393%
+	W.I.L.D. Vague Search Accuracy: 99.5618%
+
+Test Set: one_swap_test.json
+	Straight L.D. Search Accuracy: 81.6854%
+	W.I.L.D. Search Accuracy: 84.8090%
+	W.I.L.D. Vague Search Accuracy: 98.8989%
+
+Test Set: straight_test.json
+	Straight L.D. Search Accuracy: 100.0000%
+	W.I.L.D. Search Accuracy: 100.0000%
+	W.I.L.D. Vague Search Accuracy: 100.0000%
+
+Test Set: two_delete_test.json
+	Straight L.D. Search Accuracy: 23.5846%
+	W.I.L.D. Search Accuracy: 25.3050%
+	W.I.L.D. Vague Search Accuracy: 52.7682%
+
+Test Set: two_insert_test.json
+	Straight L.D. Search Accuracy: 84.4719%
+	W.I.L.D. Search Accuracy: 91.5169%
+	W.I.L.D. Vague Search Accuracy: 98.8315%
+
+Test Set: two_swap_test.json
+	Straight L.D. Search Accuracy: 60.4045%
+	W.I.L.D. Search Accuracy: 64.9663%
+	W.I.L.D. Vague Search Accuracy: 90.6067%
+
