@@ -1,0 +1,77 @@
+Test Set: one_delete_test.json
+	Straight L.D. Search Accuracy:              74.2884%
+	W.I.L.D. Search Accuracy:                   77.6040%
+	W.I.L.D. Vague Search Accuracy:             94.9484%
+	Damerau Levenshtein Search Accuracy:        73.8818%
+	Longest Common Subsequence Search Accuracy: 58.4298%
+	Hamming Distance Search Accuracy:           12.0269%
+	Cosine Similarity Search Accuracy:          0.0000%
+	Jaro Similarity Search Accuracy:            87.0191%
+	Jaro Winkler Similarity Search Accuracy:    86.6124%
+
+Test Set: one_insert_test.json
+	Straight L.D. Search Accuracy:              92.1236%
+	W.I.L.D. Search Accuracy:                   96.5281%
+	W.I.L.D. Vague Search Accuracy:             99.5506%
+	Damerau Levenshtein Search Accuracy:        92.2584%
+	Longest Common Subsequence Search Accuracy: 48.1910%
+	Hamming Distance Search Accuracy:           24.3820%
+	Cosine Similarity Search Accuracy:          0.0449%
+	Jaro Similarity Search Accuracy:            95.5169%
+	Jaro Winkler Similarity Search Accuracy:    95.7865%
+
+Test Set: one_swap_test.json
+	Straight L.D. Search Accuracy:              81.2472%
+	W.I.L.D. Search Accuracy:                   84.7978%
+	W.I.L.D. Vague Search Accuracy:             98.8764%
+	Damerau Levenshtein Search Accuracy:        81.3371%
+	Longest Common Subsequence Search Accuracy: 36.1573%
+	Hamming Distance Search Accuracy:           84.0225%
+	Cosine Similarity Search Accuracy:          41.2135%
+	Jaro Similarity Search Accuracy:            59.4831%
+	Jaro Winkler Similarity Search Accuracy:    60.9551%
+
+Test Set: straight_test.json
+	Straight L.D. Search Accuracy:              100.0000%
+	W.I.L.D. Search Accuracy:                   100.0000%
+	W.I.L.D. Vague Search Accuracy:             100.0000%
+	Damerau Levenshtein Search Accuracy:        100.0000%
+	Longest Common Subsequence Search Accuracy: 50.0000%
+	Hamming Distance Search Accuracy:           100.0000%
+	Cosine Similarity Search Accuracy:          100.0000%
+	Jaro Similarity Search Accuracy:            100.0000%
+	Jaro Winkler Similarity Search Accuracy:    100.0000%
+
+Test Set: two_delete_test.json
+	Straight L.D. Search Accuracy:              22.8495%
+	W.I.L.D. Search Accuracy:                   25.1799%
+	W.I.L.D. Vague Search Accuracy:             52.4085%
+	Damerau Levenshtein Search Accuracy:        22.9121%
+	Longest Common Subsequence Search Accuracy: 46.8721%
+	Hamming Distance Search Accuracy:           0.4066%
+	Cosine Similarity Search Accuracy:          0.0000%
+	Jaro Similarity Search Accuracy:            49.5621%
+	Jaro Winkler Similarity Search Accuracy:    49.9062%
+
+Test Set: two_insert_test.json
+	Straight L.D. Search Accuracy:              84.1685%
+	W.I.L.D. Search Accuracy:                   91.4944%
+	W.I.L.D. Vague Search Accuracy:             98.7978%
+	Damerau Levenshtein Search Accuracy:        83.4607%
+	Longest Common Subsequence Search Accuracy: 42.5955%
+	Hamming Distance Search Accuracy:           8.9663%
+	Cosine Similarity Search Accuracy:          0.0225%
+	Jaro Similarity Search Accuracy:            90.4494%
+	Jaro Winkler Similarity Search Accuracy:    90.9326%
+
+Test Set: two_swap_test.json
+	Straight L.D. Search Accuracy:              59.6742%
+	W.I.L.D. Search Accuracy:                   64.9551%
+	W.I.L.D. Vague Search Accuracy:             90.4382%
+	Damerau Levenshtein Search Accuracy:        60.0112%
+	Longest Common Subsequence Search Accuracy: 23.7303%
+	Hamming Distance Search Accuracy:           64.8764%
+	Cosine Similarity Search Accuracy:          21.8427%
+	Jaro Similarity Search Accuracy:            27.3708%
+	Jaro Winkler Similarity Search Accuracy:    29.6517%
+

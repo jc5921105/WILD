@@ -22,6 +22,7 @@ class TestRequestHandler(Handler):
             self.t1 = Test(os.path.join(self._location,TEST_SETS[TEST_SET_INDEX]),self._model, self._view, tmp)
             self.t1.test()
             self.t1.print_accuracy()
+            self.t1.dump_model()
 
             return True
         else:

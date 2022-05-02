@@ -2,6 +2,7 @@ from __future__ import print_function
 import pdb, re, json, random
 from smith.capabilities.ld_calc import med_calc
 
+
 SD_SIZE = 4 # Deviation Size
 CUTOFF_WEIGHT = 9
 MIN_POOL_SIZE = 1
@@ -15,6 +16,7 @@ def _get_data():
 
 def _get_word_pool(model,word):
     return {x:model.get(x) for x in model.keys() if (x[0] == word[0] and (len(word) - SD_SIZE) <= len(x) <= (len(word) + SD_SIZE))}
+
 
 def _get_large_word_pool(model,word):
     return {x:model.get(x) for x in model.keys() if (len(word) - SD_SIZE) <= len(x) <= (len(word) + SD_SIZE)}
@@ -44,9 +46,7 @@ def _weight_options(model,tw):
 
 
 def _get_top_option(model):
-    #pdb.set_trace()
     tmp = model[list(model.keys())[-1]]
-    #pdb.set_trace()
     for x in model:
         if model[x]['probability'] > tmp['probability']: tmp = model[x]
     return tmp
@@ -69,12 +69,24 @@ def _calc_med(model,word):
 
 
 def search(word,model):
+    #WILD Search
     tmp = _get_word_pool(model,word)
     tmp = _calc_med(tmp,word)
     tmp = _get_options(tmp)
     tw  = _get_total_weight(tmp)
     tmp = _weight_options(tmp,tw)
     opt = _get_top_option(tmp)
+    return opt
+
+
+def straight_search(word,model):
+    #LD Search
+    tmp = _get_word_pool(model,word)
+    tmp = _calc_med(tmp,word)
+    tmp = _get_options(tmp)
+    for x in tmp:
+        if tmp[x]['edit_distance'] == 0: return tmp[x]
+    opt = _get_random_option(tmp)
     return opt
 
 
@@ -96,6 +108,7 @@ def vague_search(word,model):
     tmp = _weight_options(tmp,tw)
     return tmp
 
+
 def vague_search_large(word,model):
     tmp = _get_word_pool(model,word)
     tmp = _calc_med(tmp,word)
@@ -103,6 +116,7 @@ def vague_search_large(word,model):
     tw  = _get_total_weight(tmp)
     tmp = _weight_options(tmp,tw)
     return tmp
+
 
 def deep_vague_search(word,model):
     tmp = _get_large_word_pool(model,word)
@@ -113,14 +127,9 @@ def deep_vague_search(word,model):
     return tmp
 
 
-def straight_search(word,model):
-    tmp = _get_word_pool(model,word)
-    tmp = _calc_med(tmp,word)
-    tmp = _get_options(tmp)
-    for x in tmp:
-        if tmp[x]['edit_distance'] == 0: return tmp[x]
-    opt = _get_random_option(tmp)
-    return opt
+def get_temp_model(word,model):
+    return _get_word_pool(model,word)
+
 
 if __name__ == '__main__':
 
